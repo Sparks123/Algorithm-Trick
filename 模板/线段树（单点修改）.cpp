@@ -39,7 +39,7 @@ void update(int p, int s, int t, int i, int val) {
         update(p * 2 + 1, m + 1, t, i, val);//如果i在右儿子代表的区间
     }
     maintain(p);
-};
+}
 
 //区间查询
 int getsum(int l, int r, int s, int t, int p) {
