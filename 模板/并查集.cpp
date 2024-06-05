@@ -28,3 +28,18 @@ void unite(int x, int y) {
 void unite(int x, int y) { 
     fa[find(x)] = find(y); 
 }
+
+//删除
+void erase(int x) {
+    --size[find(x)];
+    fa[x] = x;
+}
+
+
+//移动
+void move(int x, int y) {
+  auto fx = find(x), fy = find(y);
+  if (fx == fy) return;
+  fa[x] = fy;
+  --size[fx], ++size[fy];
+}
