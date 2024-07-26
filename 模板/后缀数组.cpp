@@ -59,7 +59,7 @@ void cal_sa() {
 
 }
 
-/*模式串s,主串t,主串T下标从1开始,dir=0表示找t中最左边的匹配，dir=1 表示找t中最右边的匹配。
+/*模式串s,主串t,主串T下标从1开始,dir=0表示找sa中最左边(小)的匹配，dir=1 表示找sa中最右边(大)的匹配。
 假设存在多个匹配 left=match(string s,string t,  0), right=match(string s,string t, 1),那么匹配的位置为
 for(int j=left;j<=right;j++){
     int pos=sa[j];//匹配位置为t[pos...pos+sz-1],(下标从1开始，sz为模式串的长度)
